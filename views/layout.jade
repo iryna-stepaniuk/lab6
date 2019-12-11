@@ -1,7 +1,15 @@
 doctype html
 html
-  head
-    title= title
-    link(rel='stylesheet', href='/stylesheets/style.css')
-  body
-    block content
+	head
+		title= title
+		link(rel='stylesheet', href='/stylesheets/style.css')
+	body
+		header
+			ul.menu
+				li.menu-item
+					a(href='/')="Home page"
+				each post in posts
+					li.menu-item
+						a(href=`/posts/${post.id}`)=post.title
+
+		block content

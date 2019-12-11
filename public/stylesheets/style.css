@@ -1,8 +1,42 @@
-body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+body, html {
+  padding: 0;
+  margin: 0;
+  background-color: darkgray;
 }
 
-a {
-  color: #00B7FF;
+header {
+  background-color: #69bcb6;
+  padding: 10px;
+}
+
+.menu {
+  text-align: center;
+}
+
+.menu-item {
+  display: inline-block;
+  margin: 0 15px;
+}
+
+.menu-item a {
+  color: #000;
+  font-size: 18px;
+  padding: 10px;
+  text-decoration: none;
+}
+
+.container {
+  display: flex;
+  margin: 10px;
+}
+
+.container .image img {
+  max-width: 250px;
+}
+
+.text {
+  margin: 0 50px 0 15px;
+  padding: 10px;
+  border: medium inset black;
+  background-color: cadetblue;
 }

@@ -1,0 +1,12 @@
+extends layout
+
+block content
+	.container
+		.image
+			img(src=`/images/${post.img}`)
+		.text
+			p= post.about
+			p Cast:
+			ul
+			each actor in post.cast
+				li= actor
