@@ -30,7 +30,7 @@ function getPosts() {
 
 function getPost(posts, postId) {
     const post = posts.find(doc => {
-        return doc.id == postId
+        return doc.id === postId
     });
 
     return post
